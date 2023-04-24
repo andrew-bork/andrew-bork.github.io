@@ -8,9 +8,15 @@
         <br/>
         <div class="desc">
             I'm a coder. I code things. My projects mostly lie on the web, but sometimes I venture beyond.
+
+            <div class="nav">
+                <a href="#abt-me">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
         </div>
     </div>
-    <div class="full-screen-container">
+    <div id="abt-me" class="full-screen-container">
         <h2>About Me <hr></h2>
 
         <div class="skills">
@@ -37,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="full-screen-container">
+    <div id="projects" class="full-screen-container">
         <h2>Projects <hr></h2>
 
         <div class="projects">
@@ -92,8 +98,8 @@
             </div> -->
         </div>
     </div>
-    <div class="full-screen-container">
-        <h2>Contacts</h2>
+    <div id="contact" class="full-screen-container">
+        <h2>Contact Me</h2>
         <a href="mailto:bork.andrew.ryan@gmail.com" target="_blank">bork.andrew.ryan@gmail.com</a>
         <a href="https://github.com/andrew-bork" target="_blank">Github Repo</a>
     </div>
@@ -123,7 +129,7 @@
     .full-screen-container {
         max-width: 60%;
         width: fit-content;
-        min-height: 120vh;
+        min-height: 100vh;
         display: flex;
         /* align-items: center; */
         justify-content: center;
@@ -205,4 +211,21 @@
         font-size: 12px;
     }
 
+    .nav {
+        margin-top: 20px;
+    }
+
+    .nav a {
+        border: 1px solid #f1f9fdfb;
+        padding: 10px 20px;
+        font-size: 18px;
+        margin: 5px;
+        border-radius: 3px;
+        transition: color .3s, border-color .3s;
+    }
+
+    .nav a:hover {
+        border-color: #5abcedfb;
+
+    }
 </style>
